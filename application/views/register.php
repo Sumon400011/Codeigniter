@@ -17,8 +17,8 @@
                         </div>';
                   }
                ?>
-                  <form class="form-horizontal" method="POST" action="<?= base_url();?>register/validation">
-
+                  <form class="form-horizontal" method="POST" action="<?= base_url('Validation'); ?>"><!-- register/validation -->
+                     
                      <!-- Text input-->
                      <div class="form-group">
                         <input id="user_name" name="user_name" type="text" placeholder="Full name" class="form-control font-small" required="required" value="<?= set_value('user_name'); ?>">

@@ -5,6 +5,7 @@ class Register_model extends CI_Model {
       parent::__construct();
    }
 
+   // ============ Inserting Data ============
    public function signup_data_insert($data)
    {
       $this->db->insert("signup", $data);
@@ -14,7 +15,7 @@ class Register_model extends CI_Model {
 
    
 
-   // ======= Email verification model =========
+   // ============ Email verification model ============
     function verify_email($key)
    {
       $this->db->where("verification_key", $key);
@@ -35,7 +36,7 @@ class Register_model extends CI_Model {
    }
 
 
-   // ============================================================
+   // ====================== Login ============================
    public function can_login($email, $password){
       $this->db->where("sign_email", $email);
       $query = $this->db->get("signup");
@@ -56,8 +57,8 @@ class Register_model extends CI_Model {
                                              'email'    =>  $row->sign_email,
                                              'logged_in'=>  TRUE
                                           );
-                                          // $this->session->set_userdata('id', $row->sign_id);
-                                          $this->session->set_userdata($userdata);
+                                 // $this->session->set_userdata('id', $row->sign_id);
+                                 $this->session->set_userdata($userdata);
 
 
                               // $this->session->set_userdata('id', $row->sign_id);

@@ -17,7 +17,7 @@
                            </div>';
                      }
                ?>
-                     <form class="form-horizontal" method="POST" action="<?= base_url(); ?>Register/login_validation">
+                     <form class="form-horizontal" method="POST" action="<?= base_url('Login_Validation'); ?>"> <!-- Register/login_validation -->
 
                      <!-- Text input-->
                      <div class="form-group">

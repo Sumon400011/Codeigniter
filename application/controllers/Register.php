@@ -140,8 +140,8 @@ class Register extends CI_Controller {
             $result = $this->Register_model->can_login($this->input->post("user_email"), md5($this->input->post("user_pass")));
 
             if ($result == '') {
-               redirect('private_area');
-               // redirect(base_url('Signup'));
+               // redirect('private_area');
+               redirect(base_url('Private_area'));
             }else{
                $this->session->set_flashdata('message', $result);
                redirect(base_url('Login'));
