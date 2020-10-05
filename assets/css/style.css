@@ -1,0 +1,256 @@
+body{
+    background: #F7F7F7;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --green_color: #8FAF64; 
+    --purple_color: #97659B; 
+    --blue_color: #2E4A6D; 
+}
+
+
+/*basic css*/
+.form-control{
+    box-shadow: none!important;
+}
+.form-control:focus{
+    box-shadow: none!important;
+}
+
+.green_color{
+    background-color: var(--green_color)!important;
+}
+
+
+.header_btn a{
+    background-color: var(--purple_color);
+    color: white;
+}
+.header_btn a:hover{
+    background-color: var(--green_color);
+}
+
+/*========== Navbar ============*/
+
+.nav{
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-item{
+    font-size: 14px!important;
+}
+
+
+.navbar .nav-item{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar .dropdown-menu {
+   
+}
+.navbar .dropdown-menu a{
+    padding: 6px 20px!important;
+}
+.navbar .dropdown-menu .dropdown-item{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 13px!important;
+    font-weight: 500;
+    -webkit-transform: 0.7s;
+       -moz-transform: 0.7s;
+        -ms-transform: 0.7s;
+         -o-transform: 0.7s;
+            transform: 0.7s;
+            min-width: 200px;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: var(--green_color)!important;
+    /*background-image: linear-gradient(to right,#CC834C, #D2AA55, #CAB54B);*/
+    /*color: white;*/
+    padding-left: 25px!important;
+
+}
+
+
+/*sticky navbar*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*=========== End Navbar ============*/
+
+
+.owl-theme .owl-nav [class*=owl-]{
+    margin: -35px auto!important;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next  {
+    /*left: 0;*/
+    background: rgba(240, 240, 240, 0.8) !important;
+    padding: 10px !important;
+    font-size: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+	left: 0;
+}
+.owl-carousel .owl-nav button.owl-next{
+	right: 0;
+}
+
+.owl-carousel .owl-nav button {
+    border-radius: 0;
+    display: block;
+    z-index: 6;
+    margin: -35px auto;
+    position: absolute;
+    opacity: 0.4;
+    top: 50%;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+
+
+#corner_message .card .card-header{
+    background-color: var(--green_color);
+}
+#corner_message .notice_board_card .media a{
+    color: gray;
+    font-size: 14px;
+}
+#corner_message .notice_board_card .media .notice_date{
+    min-height: 25px;
+    min-width: 50px;
+    background-color: #8FAF64;
+    text-align: center;
+}
+#corner_message .card .card-footer .btn{
+    /*background-color: var(--purple_color);*/
+    background-color: #F5F5F5;
+}
+
+
+
+
+
+#why_choose_us .card button{
+    background-color: var(--purple_color);
+}
+#why_choose_us .card button:hover{
+    background-color: var(--green_color);
+}
+
+#why_choose_us .services .card .text{
+    min-height: 100px;
+}
+#why_choose_us .services .card .card_icon {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+#why_choose_us .services .card .card_icon:hover{
+    background-color: var(--green_color);
+}
+#why_choose_us .services .card .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#why_choose_us .services .card-text {
+    font-size: 12px!important;
+    font-weight: 500;
+    color: gray;
+}
+
+#why_choose_us .services .read_more_link {
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+    text-transform: capitalize;
+}
+
+
+
+
+
+#events{
+    background-color: white;
+    width: 100%;
+}
+
+#events .notice_board_card .media .notice_date{
+    min-height: 25px;
+    min-width: 50px;
+    background-color: #8FAF64;
+    text-align: center;
+}
+
+#events .notice_board_card .media a{
+    color: gray;
+    font-size: 14px;
+}
+
+#events .card .card-footer .btn{
+    /*background-color: var(--purple_color);*/
+    background-color: #F5F5F5;
+}
+
+
+
+
+
+
+.free_reg_form .col-sm-12,
+.free_reg_form .col-sm-6{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.free_reg_form .form-control{
+    border: 0px;
+    border-radius: 0px;
+    font-size: 14px;
+    color:#6C757D;
+}
+
+
+
+
+
+
+footer {
+    /*border-radius: 25px 25px 0 0;*/
+    background-color: black;
+}
+
+footer .footer_logo{
+    max-width: 60px;
+}
+
+footer ul li{
+    margin-bottom: 6px;
+}
+
+
+
+
+
+@media (min-width: 992px){
+     width: -webkit-fill-available;
+}
